@@ -4,6 +4,9 @@ import {useEffect}from 'react';
 const API_URL 'http://www.omdbapi.com?apikey=dcbabb41';
 
 const App= () => {
+    const searchMovies = async (title) => {
+
+    }
 
     useEffect(() => {
 
