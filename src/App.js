@@ -50,6 +50,7 @@ const App= () => {
                     <div>
                         <img
                         src='{movie1.poster}' 
+                        alt={movie1.Title}
                         />
                     </div>
 
