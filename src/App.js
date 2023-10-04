@@ -47,6 +47,11 @@ const App= () => {
                     <div>
                         <p>{movie1.Year}</p>
                     </div>
+                    <div>
+                        <img
+                        src='{movie1.poster}' 
+                        />
+                    </div>
 
                 </div>
 
