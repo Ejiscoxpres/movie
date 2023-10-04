@@ -42,6 +42,15 @@ const App= () => {
                 />
 
             </div>
+            <div className='container'>
+                <div className='movie'>
+                    <div>
+                        <p>{movie1.Year}</p>
+                    </div>
+
+                </div>
+
+            </div>
             
 
         </div>
