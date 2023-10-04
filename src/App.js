@@ -17,6 +17,7 @@ const App= () => {
         searchMovies('spiderman');
 
     }, []);
+    
     return (
         <div className='app'>
             <h1>MovieLand</h1>
@@ -27,7 +28,7 @@ const App= () => {
 
             </div>
 
-        </div>>
+        </div>
     );
 }
 
