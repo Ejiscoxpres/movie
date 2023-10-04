@@ -48,10 +48,14 @@ const App= () => {
                         <p>{movie1.Year}</p>
                     </div>
                     <div>
-                        <img
-                        src='{movie1.poster}' 
-                        alt={movie1.Title}
-                        />
+                    <img 
+                    src= { movie1.Poster} alt={movie1.Title} />
+                        
+                   
+                    </div>
+                    <div>
+                        <span>{movie1.Type}</span>
+                        <h3>{movie1.Title}</h3>
                     </div>
 
                 </div>
