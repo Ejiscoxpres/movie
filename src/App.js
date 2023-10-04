@@ -1,9 +1,17 @@
 import {useEffect}from 'react';
 import './App.css'
-import searchIcon from './search.svg';
+import SearchIcon from './search.svg';
 
 // dcbabb41
 const API_URL= 'http://www.omdbapi.com?apikey=dcbabb41';
+ const movie1= {
+    "Title": "Stranded",
+        "Year": "2013",
+        "imdbID": "tt2268573",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTUxNDY0NDE3Ml5BMl5BanBnXkFtZTcwNjgzOTE4OQ@@._V1_SX300.jpg"
+
+ }
 
 const App= () => {
     const searchMovies = async (title) => {
@@ -14,7 +22,7 @@ const App= () => {
     }
 
     useEffect(() => {
-        searchMovies('spiderman');
+        searchMovies('stranded');
 
     }, []);
     
@@ -24,16 +32,17 @@ const App= () => {
             <div className='search'>
                 <input
                 placeholder='search for movies' 
-                value='superman'
+                value='Abattoir'
                 onChange={() => {}}
                 />
                 <img
-                src={searchIcon}
+                src={SearchIcon}
                 alt='search' 
                 onClick={() => {}}
                 />
 
             </div>
+            
 
         </div>
     );
