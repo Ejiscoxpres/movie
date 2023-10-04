@@ -30,6 +30,7 @@ const App= () => {
                 <img
                 src={searchIcon}
                 alt='search' 
+                onClick={() => {}}
                 />
 
             </div>
