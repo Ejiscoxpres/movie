@@ -2,6 +2,7 @@ import {useState, useEffect}from 'react';
 import './App.css'
 import SearchIcon from './search.svg';
 import { useState } from 'react';
+import MovieCard from './MovieCard';
 
 // dcbabb41
 const API_URL= 'http://www.omdbapi.com?apikey=dcbabb41';
@@ -46,7 +47,9 @@ const App= () => {
                     movies?. length> 0
                     ?(
                         <div className='container'>
-                        <MovieCard movie1={movies[0]} />
+                       {movies.map((movie) => (
+                        <MovieCard movie = {movie}/>
+                       ))}
         
                     </div>  
                     ) :(
