@@ -1,7 +1,7 @@
 import {useState, useEffect}from 'react';
 import './App.css'
 import SearchIcon from './search.svg';
-import { useState } from 'react';
+
 import MovieCard from './MovieCard';
 
 // dcbabb41
@@ -48,7 +48,7 @@ const App= () => {
                     ?(
                         <div className='container'>
                        {movies.map((movie) => (
-                        <MovieCard movie = {movie}/>
+                        <MovieCard movie1 = {movies[0]}/>
                        ))}
         
                     </div>  
