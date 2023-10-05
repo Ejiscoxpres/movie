@@ -42,12 +42,23 @@ const App= () => {
                 alt='search' 
                 onClick={() => {}}
                 />
+                {
+                    movies?. length> 0
+                    ?(
+                        <div className='container'>
+                        <MovieCard movie1={movies[0]} />
+        
+                    </div>  
+                    ) :(
+                        <div className='empty'>
+                            <h2>No movie found</h2>
+
+                        </div>
+                    )
+                }
 
             </div>
-            <div className='container'>
-                <MovieCard movie1={movies[0]} />
-
-            </div>
+            
             
 
         </div>
